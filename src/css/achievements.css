@@ -1,0 +1,356 @@
+html{
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fff0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav.mobile{
+    display: none;
+  }
+nav.normal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+nav.normal div {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav.normal div figure {
+  margin: 0;
+  box-shadow: 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav.normal #logo {
+  max-height:50px ;
+}
+
+nav.normal h1 {
+  margin-left: 5px;
+  font-size: 20px;
+  color: #000000; 
+}
+
+nav.normal ul.links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.normal ul.links li {
+  margin-left: 20px;
+  padding: 0px 20px;
+}
+
+nav.normal ul.links li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 70px;
+}
+
+.achieveimg {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 60%;
+}
+
+.achieveimg h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.achieveimg article {
+    display: flex;
+}
+.achieveimg article div{
+    background-color: #ccffcc;
+    margin-bottom: 2px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.achieveimg article img {
+    max-width: 150px;
+    height:auto;
+    
+}
+
+.achieveimg article div h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.achieveimg article div p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+aside {
+    max-width: 30rem;
+    max-height: 30rem;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+footer {
+    margin-top: auto;
+    background-color: #ffffff; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px 20px;
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_content h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #000000; 
+}
+
+.footer_content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_content ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_content ul li img {
+    height: 50px;
+    width: auto;
+  }
+.footer_content ul li h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #000000; 
+}
+
+ 
+  @media (max-width: 1024px){
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    }
+    aside img{
+        width: 400px;
+        height: 400px;
+    }
+    aside {
+    width: 30rem;
+    height: 30rem;
+    order:-1;
+    }
+}
+@media (max-width: 956px){
+    main{
+        align-items: start;
+    }
+    .achieveimg{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        gap: 10px;
+    }
+    .achieveimg article div{
+        padding: 10px;
+    }
+    .achieveimg article img{
+        width: 150px;
+    }
+    .achieveimg article.a2sv{
+        position: absolute;
+        top: 44rem;
+        right: 0px;
+        width:45%;
+    }
+    nav.normal{
+        display: none;
+      }
+      li {
+        margin: 5px 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      nav.mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+    }
+    nav.mobile div {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+    nav.mobile div figure {
+      margin: 0;
+      box-shadow: 1px 0 rgba(0, 0, 0, 0.1);
+    }
+    nav.mobile #logo {
+      max-height:50px ;
+    }
+    nav.mobile li {
+        height: 50px;
+    }
+    nav.mobile ul {
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav.mobile ul.active li img{
+      max-height:50px
+    }
+    nav.mobile ul.sidebar li img{
+      max-height:50px
+    }
+    nav.mobile a {
+        height: 100%;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.8); 
+        text-decoration: none;
+    }
+    nav.mobile a:hover {
+        background-color: rgba(255, 255, 255, 0.1); 
+        color: rgb(63, 61, 61); 
+    }
+    nav.mobile a.active {
+        background-color: rgba(255, 255, 255, 0.3); 
+        color: rgb(0, 0, 0); 
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 70vh;
+        width: 250px;
+        z-index: 999;
+        backdrop-filter: blur(3px);
+        background-color: rgba(255, 252, 252, 0.8); 
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .sidebar li, .sidebara {
+        width: 100%;
+    }
+}
+@media (max-width: 440px){
+    nav.mobile ul{
+        width:35%;
+      }
+      .sidebar{
+        height:25vh;
+      }
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+        align-items: center;
+    }
+    .achieveimg{
+        flex-direction: column;
+        flex-wrap: unset;
+        width: unset;
+        gap: 10px;
+    }
+    .achieveimg article div{
+        padding: 10px;
+    }
+    .achieveimg article img{
+        width: 150px;
+    }
+    .achieveimg article.a2sv{
+        position: unset;
+        width:unset;
+    }
+    aside {
+        width: 100%;
+        order:-1;
+    }
+    footer{
+        margin-top: auto;
+      }
+    .footer_container{
+      height:100px ;
+    }
+    .footer_content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      height:100px;
+      
+    }
+    .footer_content h4 {
+      font-size: 24px;
+    }
+    .footer_content ul {
+        display: grid;
+        grid-template-columns:  repeat(2, 200px);
+        gap: 30px;
+    }
+    
+    .footer_content ul li.Email{
+      position: relative;
+      bottom: 129px;
+      left: 106px;
+    }
+    .footer_content ul li.Telegram{
+      grid-row:1/2 ;
+      grid-column: 2/-1;
+    }
+    
+  }
